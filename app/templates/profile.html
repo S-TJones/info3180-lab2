@@ -5,25 +5,31 @@
 <div class="card">
     <div class="top">
         <img src="{{ url_for('static', filename='./images/MaryJane.png') }}" alt="User's Profile Photo">
+        <!-- <img src="../static/images/MaryJane.png" alt="User's Profile Photo"> -->
         <h1 id="name">Mary Jane</h1>
-        <p>@<span id="username">mjane</span></p>
-        <p>Kingston, Jamaica</p>
-        <p>Joined <span id="date">January, 2018</span></p>
+        <p>@<span id="username">mjane</span>
+        <br>Kingston, Jamaica
+        <br>Joined <span id="date">January, 2018</span></p>
     </div>
 
     <div class="base">
         <p id="bio">I am smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</p>
+        
         <div class="details">
             <div class="columns">
-                <p> <span id="posts">7</span> <br> Posts</p>
+                <span id="posts">7</span>
+                <p>Posts</p>
             </div>
             <div class="columns">
-                <p><span id="following">100</span> <br> Following</p>
+                <span id="following">100</span>
+                <p>Following</p>
             </div>
             <div class="columns">
-                <p><span id="followers">250</span> <br> Followers</p>
+                <span id="followers">250</span>
+                <p>Followers</p>
             </div>
         </div>
+
         <button>Follow</button>
     </div>
 </div>
