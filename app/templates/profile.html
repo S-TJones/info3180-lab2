@@ -6,26 +6,26 @@
     <div class="top">
         <img src="{{ url_for('static', filename='./images/MaryJane.png') }}" alt="User's Profile Photo">
         <!-- <img src="../static/images/MaryJane.png" alt="User's Profile Photo"> -->
-        <h1 id="name">Mary Jane</h1>
-        <p>@<span id="username">mjane</span>
-        <br>Kingston, Jamaica
-        <br>Joined <span id="date">January, 2018</span></p>
+        <h1 id="name">{{ name }}</h1>
+        <p>@<span id="username">{{ username }}</span>
+        <br>{{ parish }}, {{ country }}
+        <br>Joined <span id="date">{{ date_joined }}</span></p>
     </div>
 
     <div class="base">
-        <p id="bio">I am smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</p>
+        <p id="bio">{{ bio }}</p>
         
         <div class="details">
             <div class="columns">
-                <span id="posts">7</span>
+                <span id="posts">{{ num_posts }}</span>
                 <p>Posts</p>
             </div>
             <div class="columns">
-                <span id="following">100</span>
+                <span id="following">{{ num_follows }}</span>
                 <p>Following</p>
             </div>
             <div class="columns">
-                <span id="followers">250</span>
+                <span id="followers">{{ num_followers }}</span>
                 <p>Followers</p>
             </div>
         </div>
