@@ -11,6 +11,19 @@ from flask import render_template, request, redirect, url_for, flash
 import datetime
 
 ###
+# Date Helper Function
+###
+
+def format_date_joined(unformatted_date):
+    """
+        When given a date as an argument, it will return the date
+        formatted as: Month, Year.
+    """
+    formatted_date = unformatted_date.strftime("%B, %Y")
+
+    return formatted_date
+
+###
 # Routing for your application.
 ###
 
@@ -38,9 +51,8 @@ def profile():
     num_posts, num_follows, num_followers = 7, 100, 250
 
     # Retrieve current date
-    # date = format_date_joined(datetime.datetime.now())
     unformatted_date = datetime.datetime.now()
-    date_joined = unformatted_date.strftime("%B, %Y")
+    date = format_date_joined(unformatted_date)
 
     # Sends data to Profile Page
     return render_template('profile.html', name, username, parish, country, date_joined, bio, num_posts, num_follows, num_followers)
