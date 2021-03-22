@@ -12,7 +12,7 @@ body {
 
 /* Card Section */
 .card {
-  max-width: 600px;
+  max-width: 400px;
   max-height: fit-content;
   margin-left: 20px;
 
@@ -25,7 +25,7 @@ body {
 }
 
 /* Top Section */
-.top {
+.card .top {
   background-color: rgb(97, 197, 97);
   min-height: 350px;
   color: #ffffff;
@@ -37,13 +37,13 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-.top > p {
+.card .top > p {
   padding: 5px;
   text-align: center;
   line-height: 24px;
 }
 
-img {
+.card img {
   margin-top: 30px;
 
   width: 200px;
@@ -51,7 +51,7 @@ img {
 }
 
 /* Base Section */
-.base {
+.card .base {
   width: 100%;
   min-height: fit-content;
 
@@ -60,7 +60,7 @@ img {
   align-items: center;
 }
 
-.details {
+.card .details {
   padding: 20px 0px;
 
   display: flex;
@@ -69,13 +69,13 @@ img {
   justify-content: space-between;
 }
 
-#bio {
+.card #bio {
   margin: 15px auto;
   padding: 0px 35px;
   color: #969494;
 }
 
-.columns {
+.card .columns {
   width: 100px;
 
   display: flex;
@@ -83,16 +83,16 @@ img {
   align-items: center;
 }
 
-.columns span {
+.card .columns span {
   font-weight: bolder;
   padding-bottom: 10px;
 }
 
-.columns > p {
+.card .columns > p {
   color: #969494;
 }
 
-button {
+.card button {
   background-color: rgb(0, 190, 0);
   color: #ffffff;
   font-weight: bold;

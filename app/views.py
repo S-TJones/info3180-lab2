@@ -44,7 +44,7 @@ def profile():
     """Render the website's profile page."""
 
     # Data for a user
-    name = "Mary Jane"
+    name = "Jantae L."
     username = "mjane"
     parish, country = "Kingston", "Jamaica"
     bio = "I am smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project."
@@ -55,7 +55,7 @@ def profile():
     date = format_date_joined(unformatted_date)
 
     # Sends data to Profile Page
-    return render_template('profile.html', name, username, parish, country, date_joined, bio, num_posts, num_follows, num_followers)
+    return render_template('profile.html', name=name, username=username, parish=parish, country=country, date_joined=date, bio=bio, num_posts=num_posts, num_follows=num_follows, num_followers=num_followers)
 
 ###
 # The functions below should be applicable to all Flask apps.
