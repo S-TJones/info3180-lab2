@@ -44,7 +44,7 @@ def profile():
     """Render the website's profile page."""
 
     # Data for a user
-    name = "Jantae L."
+    name = "Mary Jane"
     username = "mjane"
     parish, country = "Kingston", "Jamaica"
     bio = "I am smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project."
